@@ -1,6 +1,6 @@
-# Milestone Project 4: OOBER
+# Milestone Project 4: OOBR
 
-![MS3-impala-responsiveness]
+![MS4-OOBR-responsiveness]
 
 [View the live project here.](https://milestone-project-3-impala.herokuapp.com/)<br>
 
