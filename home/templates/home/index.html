@@ -10,18 +10,300 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h3 class="display-4 logo-font text-black">
-                    57 bars and restaurants are using Oobr to serve their customers.
-                </h3>
-                <div>
-                    <h4>
-                        <a href="#" class="register-business-button btn btn-dark rounded-pill">Register Your Business</a>
-                    </h4>
+<section class="cover">
+    <div class="container cover-background">
+        <div class="row justify-content-center firstrow">
+            <div class="col-sm-6 text-center">
+                <h3 class="covertitle-font">57 bars and restaurants are using <span class="logo-font"><span
+                            class="logo-green">O</span>obr</span> to serve their customers</h3>
+                <a href="#" class="btn btn-dark my-2">Register Your Business</a>
+            </div>
+        </div>
+        <div class="row secondrow">
+            <img class="cellphones-cover" src="/media/cellphones-cover.png">
+        </div>
+        <div class="row justify-content-center thirdrow">
+            <div class="col-sm-5 col-md-9 col-lg-5 text-center">
+                <h3 class="covertitle-font">An ordersystem for bars and restaurants</h3>
+                <p class="covertext-font mobileview">The Oobr application provides your customers with your menu on
+                    their mobile device enabling them to directly place and pay their order.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-2 col-md-6 p-4 mt-2 cover-col">
+                <h5 class="card-title"><i class="fas fa-tachometer-alt bluecolor"></i>&nbsp;&nbsp;Faster Service
+                </h5>
+                <p class="card-text">Customers place their order themselves so orders are placed
+                    much quicker.</p>
+            </div>
+            <div class="col-12 col-sm-2 col-md-6 p-4 mt-2 cover-col">
+                <h5 class="card-title"><i class="fas fa-coins bluecolor"></i>&nbsp;&nbsp;Bigger Turnover</h5>
+                <p class="card-text">When they order it themselves, your customers will order more.</p>
+            </div>
+            <div class="col-12 col-sm-2 col-md-6 p-4 mt-2 cover-col">
+                <h5 class="card-title"><i class="far fa-laugh bluecolor"></i>&nbsp;&nbsp;Customer Experience
+                </h5>
+                <p class="card-text">Let's face it, if customers can experience a part of your business
+                    digitally: it's a plus.</p>
+            </div>
+            <div class="col-12 col-sm-2 col-md-6 p-4 mt-2 cover-col mobile-lastcol">
+                <h5 class="card-title"><i class="fas fa-cogs bluecolor"></i>&nbsp;&nbsp;Swift Implementation
+                </h5>
+                <p class="card-text">Easy to set up and implement to meet the requirements of your
+                    business.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="howdoesitwork-mobile">
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="mobile-step-number">01</div>
+                <img src="/media/cellphone-mobile-carousel.png" class="mobile-cellphone-img">
+                <div class="mobile-step-title">Scan QR Code</div>
+            </div>
+            <div class="swiper-slide">
+                <div class="mobile-step-number">02</div>
+                <div class="mobile-step-title">Pick From Menu</div>
+                <img src="/media/cellphone-mobile-carousel.png" class="mobile-cellphone-img">
+            </div>
+            <div class="swiper-slide">
+                <div class="mobile-step-number">03</div>
+                <div class="mobile-step-title">Confirm Order</div>
+                <img src="/media/cellphone-mobile-carousel.png" class="mobile-cellphone-img">
+            </div>
+            <div class="swiper-slide">
+                <div class="mobile-step-number">04</div>
+                <div class="mobile-step-title">Pay</div>
+                <img src="/media/cellphone-mobile-carousel.png" class="mobile-cellphone-img">
+            </div>
+            <div class="swiper-slide">
+                <div class="mobile-step-number">05</div>
+                <div class="mobile-step-title">Check Receipt</div>
+                <img src="/media/cellphone-mobile-carousel.png" class="mobile-cellphone-img">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="howdoesitwork position-relative d-md-flex d-none align-items-center overflow-hidden space">
+    <div class="howdoesitwork-image">
+        <img class="howdoesitwork-circle" data-src="/media/howdoesitwork-circle.png" alt="Circle"
+            src="/media/howdoesitwork-circle.png">
+    </div>
+    <div class="howdoesitwork-main">
+        <div id="carouselExampleIndicators" class="steps-slider carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-dots carousel-indicators">
+                <li class="carousel-dots-each active" data-target="#carouselExampleIndicators" data-slide-to="0">01.
+                    Scan QR Code</li>
+                <li class="carousel-dots-each" data-target="#carouselExampleIndicators" data-slide-to="1">02. Pick From
+                    Menu</li>
+                <li class="carousel-dots-each" data-target="#carouselExampleIndicators" data-slide-to="2">03. Confirm
+                    Your Order</li>
+                <li class="carousel-dots-each" data-target="#carouselExampleIndicators" data-slide-to="3">04. Pay</li>
+                <li class="carousel-dots-each" data-target="#carouselExampleIndicators" data-slide-to="4">05. Check Your
+                    Receipt</li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="howdoesitwork-content position-relative d-flex flex-wrap align-items-center">
+                        <div class="howdoesitwork-left"><img src="/media/cellphone.png" class="img-fluid" alt="cellphone"></div>
+                        <div class="howdoesitwork-number">01</div>
+                        <div class="howdoesitwork-right">
+                            <h4 class="covertext-font bluecolor">Scan QR Code</h4>
+                            <p class="howdoesitwork-text">All you need to do is sit down, take your mobile phone, scan the QR code and the menu of the Oobr bar or restaurant will pop up.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="howdoesitwork-content position-relative d-flex flex-wrap align-items-center">
+                        <div class="howdoesitwork-left"><img src="/media/cellphone.png" class="img-fluid" alt="cellphone"></div>
+                        <div class="howdoesitwork-number">02</div>
+                        <div class="howdoesitwork-right">
+                            <h4 class="covertext-font bluecolor">Pick From Menu</h4>
+                            <p class="howdoesitwork-text">Select your food or beverage and specify the quantity.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="howdoesitwork-content position-relative d-flex flex-wrap align-items-center">
+                        <div class="howdoesitwork-left"><img src="/media/cellphone.png" class="img-fluid" alt="cellphone"></div>
+                        <div class="howdoesitwork-number">03</div>
+                        <div class="howdoesitwork-right">
+                            <h4 class="covertext-font bluecolor">Confirm Your Order</h4>
+                            <p class="howdoesitwork-text">Once everything has been selected, you will get an overview of the order you are going to place. All you need to do is confirm.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="howdoesitwork-content position-relative d-flex flex-wrap align-items-center">
+                        <div class="howdoesitwork-left"><img src="/media/cellphone.png" class="img-fluid" alt="cellphone"></div>
+                        <div class="howdoesitwork-number">04</div>
+                        <div class="howdoesitwork-right">
+                            <h4 class="covertext-font bluecolor">Pay</h4>
+                            <p class="howdoesitwork-text">Pay the order via the built-in payment system.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="howdoesitwork-content position-relative d-flex flex-wrap align-items-center">
+                        <div class="howdoesitwork-left"><img src="/media/cellphone.png" class="img-fluid" alt="cellphone"></div>
+                        <div class="howdoesitwork-number">05</div>
+                        <div class="howdoesitwork-right">
+                            <h4 class="covertext-font bluecolor">Check Your Receipt</h4>
+                            <p class="howdoesitwork-text">Afterwards you will receive a handy receipt in your mailbox.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</section>
+<section>
+    
+</section>
 {% endblock %}
+
+{% block page_footer %}
+    <div class="container-fluid footer-container">
+        <div class="row justify-content-center footerpositioning">
+            <div class="col-md-3 text-center mt-4">
+                <h4><span class="logo-font"><span class="logo-green">O<span style="color:white;">obr</span></h4>
+            </div>
+            <div class="col-md-3 mt-4">
+                <p class="footer-title logo-green">Useful Links</p>
+                <ul class="footer-list">
+                    <li><a href="#" class="footer-link">Register your business</a></li>
+                    <li><a href="#" class="footer-link">Get in touch</a></li>
+                    <li><a href="#" class="footer-link">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mt-4">
+                <p class="footer-title logo-green">Find Us</p>
+                <ul class="footer-list">
+                    <li><a href="#" class="footer-link">Facebook</a></li>
+                    <li><a href="#" class="footer-link">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mt-4">
+                <p class="footer-title logo-green">Subscription</p>
+                <p class="footer-text">Subscribe to site updates, be the first to know all the news.</p>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control footer-input" placeholder="Email" aria-label="Email" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary footer-input footer-subscribe" type="button" id="button-addon2">Subscribe</button>
+                  </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+<!--
+<section class="howdoesitwork position-relative d-md-flex align-items-center">
+    <div class="howdoesitwork-image my-5">
+        <img class="howdoesitwork-circle" data-src="/media/howdoesitwork-circle.png" alt="Circle"
+            src="/media/howdoesitwork-circle.png">
+    </div>
+    <div class="howdoesitwork-main">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-dots carousel-indicators">
+                <li class="carousel-dots-each active" data-target="#carouselExampleIndicators" data-slide-to="0">01.
+                    Scan QR Code</li>
+                <li class="carousel-dots-each" data-target="#carouselExampleIndicators" data-slide-to="1">02. Pick From
+                    Menu</li>
+                <li class="carousel-dots-each" data-target="#carouselExampleIndicators" data-slide-to="2">03. Confirm
+                    Your Order</li>
+                <li class="carousel-dots-each" data-target="#carouselExampleIndicators" data-slide-to="3">04. Pay</li>
+                <li class="carousel-dots-each" data-target="#carouselExampleIndicators" data-slide-to="4">05. Check Your
+                    Receipt</li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="step-content position-relative d-flex flex-wrap align-items-center">
+                        <div class="step-left"><img src="/media/cellphone.png" class="img-fluid" alt="cellphone"></div>
+                        <div class="step-number">01</div>
+                        <div class="step-right">
+                            <h4 class="covertext-font bluecolor">Scan QR Code</h4>
+                            <p class="howdoesitwork-text">All you need to do is sit down, take your mobile phone, scan the QR code and the menu of the Oobr bar or restaurant will pop up.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="step-content position-relative d-flex flex-wrap align-items-center">
+                        <div class="step-left"><img src="/media/cellphone.png" class="img-fluid" alt="cellphone"></div>
+                        <div class="step-number">02</div>
+                        <div class="step-right">
+                            <h4 class="covertext-font bluecolor">Pick From Menu</h4>
+                            <p class="howdoesitwork-text">Select your food or beverage and specify the quantity.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="step-content position-relative d-flex flex-wrap align-items-center">
+                        <div class="step-left"><img src="/media/cellphone.png" class="img-fluid" alt="cellphone"></div>
+                        <div class="step-number">03</div>
+                        <div class="step-right">
+                            <h4 class="covertext-font bluecolor">Confirm Your Order</h4>
+                            <p class="howdoesitwork-text">Once everything has been selected, you will get an overview of the order you are going to place. All you need to do is confirm.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="step-content position-relative d-flex flex-wrap align-items-center">
+                        <div class="step-left"><img src="/media/cellphone.png" class="img-fluid" alt="cellphone"></div>
+                        <div class="step-number">04</div>
+                        <div class="step-right">
+                            <h4 class="covertext-font bluecolor">Pay</h4>
+                            <p class="howdoesitwork-text">Pay the order via the built-in payment system.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="step-content position-relative d-flex flex-wrap align-items-center">
+                        <div class="step-left"><img src="/media/cellphone.png" class="img-fluid" alt="cellphone"></div>
+                        <div class="step-number">05</div>
+                        <div class="step-right">
+                            <h4 class="covertext-font bluecolor">Check Your Receipt</h4>
+                            <p class="howdoesitwork-text">Afterwards you will receive a handy receipt in your mailbox.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="howdoesitwork-mobile">
+    <div class="carousel"
+    data-flickity='{ "wrapAround": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
+    <div class="carousel-cell">
+        <div class="mobile-step-number">01</div>
+        <img src="/media/cellphone-mobile-carousel.png">
+    </div>
+    <div class="carousel-cell">
+        <div class="mobile-step-number">02</div>
+        <img src="/media/cellphone-mobile-carousel.png">
+    </div>
+    <div class="carousel-cell">
+        <div class="mobile-step-number">03</div>
+        <img src="/media/cellphone-mobile-carousel.png">
+    </div>
+    <div class="carousel-cell">
+        <div class="mobile-step-number">04</div>
+        <img src="/media/cellphone-mobile-carousel.png">
+    </div>
+    <div class="carousel-cell">
+        <div class="mobile-step-number">05</div>
+        <img src="/media/cellphone-mobile-carousel.png">
+    </div>
+    </div>
+</section>
+<section class="register">
+    <div class="container-fluid">
+        <div class="row justify-content-center py-4" style="background-color: #2ECC71;">
+            <div class="col-sm-6 col-md-8 justify-content-center text-center m-4">
+                <h3 class="covertext-font" style="color:white;">It's time to let your customers place orders digitally</h3>
+                <a href="#" class="btn btn-dark my-2">Register Here</a>
+            </div>
+        </div>
+    </div> 
+</section>
+-->
