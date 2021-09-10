@@ -1,16 +1,29 @@
-from business.forms import BusinessForm
-from django.shortcuts import render
+from user.models import CustomUser
+from django.shortcuts import redirect
+from django.views.generic import CreateView
 
-from .forms import BusinessForm
+from business.models import BusinessDetails
+from business.forms import BusinessDetailsForm
 
 # Create your views here.
 
-def add_business(request):
-    """ Register """
-    form = BusinessForm()
-    template = 'business/add_business.html'
-    context = {
-        'form': form,
-    }
+class BusinessDetailsView(CreateView):
+    model = BusinessDetails
+    form_class = BusinessDetailsForm
+    template_name = 'business/business_details.html'
 
-    return render(request, template, context)
+    def form_valid(self, form):
+        business_details = form.save(commit=False)
+        business_details.user = self.request.user
+        business_details.save()
+        return redirect('business_locations')
+
+
+# def business_details(request):
+#    form = BusinessDetailForm()
+#    template = 'business/business_details.html'
+#    context = {
+#        'form': form,
+#    }
+
+#    return render(request, template, context)

@@ -4,9 +4,13 @@ from django.contrib.auth.models import AbstractUser
 # Create your models here.
 
 class CustomUser(AbstractUser):
-    is_business_user = models.BooleanField(default=False)
-    is_customer_user = models.BooleanField(default=False)
 
-class BusinessUser(models.Model):
-    user = models.OneToOneField(CustomUser, on_delete=models.CASCADE, primary_key=True)
-    business_name = models.CharField(max_length=150, blank=False)
+    username = models.CharField(max_length=40, unique=True, default='')
+    email = models.EmailField(max_length=254, unique=True, default='')
+    is_company_user = models.BooleanField(default=False)
+    is_customer_user = models.BooleanField(default=False)
+    business_name = models.CharField(max_length=80, blank = False, default = '')
+
+    def __str__(self):
+        return self.username
+    

@@ -1,9 +1,11 @@
 from django import forms
-from .models import Business
+from business.models import BusinessDetails
 
 
-class BusinessForm(forms.ModelForm):
+class BusinessDetailsForm(forms.ModelForm):
 
     class Meta:
-        model = Business
-        fields = '__all__'
+        model = BusinessDetails  
+        fields = [
+            'business_owner', 'contact_number', 'VAT_number', 'bankaccount_number'
+        ]
