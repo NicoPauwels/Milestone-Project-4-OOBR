@@ -17,13 +17,11 @@ from django.contrib import admin
 from django.urls import path, include 
 from django.conf import settings
 from django.conf.urls.static import static
-
-from user import views
+from users.views import signupbusiness
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
+    path("accounts/signup/business/", signupbusiness, name='signupbusiness'),
+    path('admin/', admin.site.urls),
     path('', include('home.urls')),
-    path('business/', include('business.urls')),
-    path('user/', include('user.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
