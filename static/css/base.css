@@ -248,6 +248,21 @@ body {
     margin: 0 auto;
 }
 
+/* ----- Allauth Styling ----- */
+
+.allauth-container {
+    padding-top: 160px;
+    padding-left: 0px;
+    padding-right: 0px;
+    bottom: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: url('/media/oobr-auth-background.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% 100%;
+}
+
 @media (max-width: 767.98px) { 
 
     .fourthrow {
