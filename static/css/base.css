@@ -248,9 +248,9 @@ body {
     margin: 0 auto;
 }
 
-/* ----- Allauth Styling ----- */
+/* ----- Form Styling ----- */
 
-.allauth-container {
+.form-container {
     padding-top: 160px;
     padding-left: 0px;
     padding-right: 0px;
